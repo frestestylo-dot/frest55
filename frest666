@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Frest Estylo | Catálogo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* RESET Y TIPOGRAFÍA */
+* {box-sizing: border-box; font-family: 'Oswald', sans-serif; margin:0; padding:0;}
+body {background:#f02547; color:#fff;}
+
+/* CONTENEDOR */
+.wrapper {max-width: 430px; margin:auto; padding:20px;}
+
+/* LOGO */
+.logo {text-align:center; margin-bottom:25px;}
+.logo img {width:150px; margin-bottom:10px;}
+.logo h1 {margin:0; font-size:1.8rem;}
+.logo p {color:#fff; font-size:.9rem;}
+
+/* AVISO FECHA */
+.aviso {text-align:center; background:#000; padding:12px; margin:15px 0; border-radius:16px; color:#fff; border:2px solid #fff; font-weight:600;}
+
+/* BOTONES */
+.link {
+  display:block;
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:16px;
+  margin:10px 0;
+  border-radius:30px;
+  text-align:center;
+  font-weight:600;
+  border:2px solid #fff;
+  transition:0.2s;
+  cursor:pointer;
+}
+.link:hover {opacity:0.8;}
+.link.red {background:#fff; color:#000; border:none;}
+
+/* SECCIONES */
+.section {display:none; margin-top:30px;}
+.card, .product {
+  background:#222;
+  border-radius:16px;
+  padding:15px;
+  margin-bottom:15px;
+  text-align:center;
+}
+.card img, .product img {width:100%; border-radius:12px; background:#111; display:block;}
+
+/* PRECIO Y BOTÓN WHATSAPP */
+.price {color:#ffb3c1; font-size:1.2rem;}
+.btn {
+  display:block;
+  margin-top:10px;
+  padding:12px;
+  border-radius:20px;
+  background:#000;
+  color:#fff;
+  border:2px solid #fff;
+  text-decoration:none;
+  font-weight:600;
+}
+.btn:hover {opacity:0.8;}
+
+/* HISTORIA */
+.historia {background:#111; padding:15px; border-radius:16px; color:#fff; font-size:.9rem; line-height:1.5; margin-top:20px;}
+
+/* FOOTER */
+footer {text-align:center; margin:30px 0; color:#fff; font-size:.8rem;}
+</style>
+
+<script>
+function mostrar(id){
+  document.querySelectorAll('.section').forEach(s=>s.style.display='none');
+  document.getElementById(id).style.display='block';
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="https://i.ibb.co/whrcSxfS/file-000000000de871f88d188e8d94dbcbc9.png" alt="Frest Estylo">
+    <h1>FREST ESTYLO</h1>
+    <p>La frescura del estilo auténtico</p>
+  </div>
+
+  <!-- AVISO -->
+  <div class="aviso">🛑Disponible Hasta el 20 de febrero🛑</div>
+
+  <!-- BOTONES -->
+  <a class="link" onclick="mostrar('amor')">❤️ Amor & Amistad</a>
+  <a class="link" onclick="mostrar('productos')">🛍 Productos</a>
+  <a class="link" onclick="mostrar('coleccion')">👕 Colección</a>
+  <a class="link red" href="https://wa.me/18097500058">💬 WhatsApp Atención</a>
+  <a class="link" onclick="mostrar('historia')">📖 Historia</a>
+
+  <!-- AMOR -->
+  <section id="amor" class="section">
+    <h2>💘 Combos Amor & Amistad</h2>
+
+    <div class="card"><img src="https://i.ibb.co/j9W7XG2G/photo-2026-01-31-17-17-30.jpg" alt="Combo 0"><h3>Combo 0</h3><p>Regalo sorpresa personalizado 1 al 3</p><div class="price">Desde RD$ 995–1345–1545</div><a class="btn" href="https://wa.me/18097500058">Pedir por WhatsApp</a></div>
+    <div class="card"><img src="https://i.ibb.co/FkDytxTQ/photo-2026-01-31-19-33-57.jpg" alt="Combo 1"><h3>Combo 1</h3><p>Tazas personalizadas</p><div class="price">Desde RD$ 245</div><a class="btn" href="https://wa.me/18097500058">Pedir por WhatsApp</a></div>
+    <div class="card"><img src="https://i.ibb.co/04wmj3d/photo-2026-01-31-17-18-02.jpg" alt="Combo 2"><h3>Combo 2</h3><p>Vasos personalizados 20oz</p><div class="price">Desde RD$ 790</div><a class="btn" href="https://wa.me/18097500058">Pedir por WhatsApp</a></div>
+
+Wrld, [01/02/2026 11:35]
+<div class="card"><img src="https://i.ibb.co/q8fLJbr/photo-2026-01-31-19-34-03.jpg" alt="Combo 3"><h3>Combo 3</h3><p>Vasos personalizados 15oz</p><div class="price">Desde RD$ 595</div><a class="btn" href="https://wa.me/18097500058">Pedir por WhatsApp</a></div>
+    <div class="card"><img src="https://i.ibb.co/WvWrQZp5/photo-2026-01-31-19-34-09.jpg" alt="Combo 4"><h3>Combo 4</h3><p>2 covers personalizados</p><div class="price">Desde RD$ 745</div><a class="btn" href="https://wa.me/18097500058">Pedir por WhatsApp</a></div>
+    <div class="card"><img src="https://i.ibb.co/xt4ZZK6K/photo-2026-01-31-17-17-21.jpg" alt="Combo 5"><h3>Combo 5</h3><p>Vasos pareja 20 oz</p><div class="price">Desde RD$ 1545</div><a class="btn" href="https://wa.me/18097500058">Pedir por WhatsApp</a></div>
+    <div class="card"><img src="https://i.ibb.co/PsFfNtVp/photo-2026-01-31-19-56-53.jpg" alt="Combo 6"><h3>Combo 6</h3><p>Oversize + vaso</p><div class="price">Desde RD$ 1295</div><a class="btn" href="https://wa.me/18097500058">Pedir por WhatsApp</a></div>
+    <div class="card"><img src="https://i.ibb.co/gbfBgkwc/photo-2026-01-31-17-17-13.jpg" alt="Combo 7"><h3>Combo 7</h3><p>Poloches pareja</p><div class="price">Desde RD$ 745</div><a class="btn" href="https://wa.me/18097500058">Pedir por WhatsApp</a></div>
+    <div class="card"><img src="https://i.ibb.co/tMTv1nSw/photo-2026-01-31-17-17-52.jpg" alt="Combo 8"><h3>Combo 8</h3><p>Taza mágica + llavero</p><div class="price">Desde RD$ 495</div><a class="btn" href="https://wa.me/18097500058">Pedir por WhatsApp</a></div>
+    <div class="card"><img src="https://i.ibb.co/7xrJ99Cr/photo-2026-01-31-17-18-22.jpg" alt="Combo 9"><h3>Combo 9</h3><p>Vaso 20oz + poloche</p><div class="price">Desde RD$ 1145</div><a class="btn" href="https://wa.me/18097500058">Pedir por WhatsApp</a></div>
+    <div class="card"><img src="https://i.ibb.co/1tXBfLBN/photo-2026-01-31-19-54-07.jpg" alt="Combo 10"><h3>Combo 10</h3><p>Poloche + taza</p><div class="price">Desde RD$ 445</div><a class="btn" href="https://wa.me/18097500058">Pedir por WhatsApp</a></div>
+    <div class="card"><img src="https://i.ibb.co/7J8bpm1F/photo-2026-01-31-17-17-25.jpg" alt="Combo 11"><h3>Combo 11</h3><p>Hoodie + taza</p><div class="price">Desde RD$ 1245</div><a class="btn" href="https://wa.me/18097500058">Pedir por WhatsApp</a></div>
+
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="section">
+    <h2>🛍 Productos Personalizados</h2>
+
+    <!-- Productos principales -->
+    <div class="product"><img src="https://i.ibb.co/Q73Jkf90/photo-2026-01-04-12-21-22.jpg" alt="Poloche"><h3>Poloche personalizado</h3><p>Desde RD$350</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.ibb.co/wrNXHWcj/photo-2026-01-04-12-21-28.jpg" alt="Poloche Oversize"><h3>Poloche Oversize</h3><p>Desde RD$650</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.ibb.co/0RyJck1W/photo-2026-01-04-10-31-23.jpg" alt="Abrigo"><h3>Abrigos personalizados</h3><p>Desde RD$850</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.ibb.co/Cp36ZSh1/photo-2026-01-04-10-22-12.jpg" alt="Vaso 20 Oz"><h3>Vasos personalizados 20 Oz</h3><p>RD$950</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.ibb.co/0yyrYBM8/photo-2026-01-04-10-31-34.jpg" alt="Vaso 15 Oz"><h3>Vasos personalizados 15 Oz</h3><p>RD$750</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.imgur.com/ekvjQLi.jpeg" alt="Vinera"><h3>Vasos Vinera personalizada</h3><p>RD$750</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+
+Wrld, [01/02/2026 11:35]
+<div class="product"><img src="https://i.imgur.com/Bd5RyXh.jpeg" alt="Latas termicas"><h3>Latas térmicas personalizadas 12oz,16oz</h3><p>Desde RD$595 hasta RD$750</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.ibb.co/p6RNzVpf/photo-2026-01-04-12-21-13.jpg" alt="Taza"><h3>Tazas personalizadas</h3><p>Desde RD$250</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.ibb.co/wr4SKHD0/photo-2026-01-04-10-31-28.jpg" alt="Taza mágica"><h3>Tazas mágicas personalizadas</h3><p>RD$350</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.ibb.co/20KsBBJx/photo-2026-01-04-10-31-16.jpg" alt="Termos"><h3>Termos personalizados (15 y 20 Oz)</h3><p>RD$900</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.imgur.com/vVRg7ve.jpeg" alt="Botellas"><h3>Botellas deportivas personalizadas</h3><p>RD$495</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.ibb.co/DD2HvNFK/photo-2026-01-04-12-24-19.jpg" alt="Forros"><h3>Forros personalizados</h3><p>RD$450</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.ibb.co/5hjZqstP/photo-2026-01-04-12-28-09.jpg" alt="Llaveros"><h3>Llavero personalizado</h3><p>RD$250</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.ibb.co/SDkk88Nx/photo-2026-01-04-10-31-39.jpg" alt="Destapadores"><h3>Destapador personalizado</h3><p>RD$250</p><a class="btn" href="https://wa.me/18097500058" target="_blank">Personalizar por WhatsApp</a></div>
+
+  </section>
+
+  <!-- COLECCIÓN -->
+  <section id="coleccion" class="section">
+    <h2>👕 Colección Streetwear</h2>
+    <div class="product"><img src="https://i.imgur.com/KmDFfhW.png" alt="Oversized Dark Mind"><h3>Oversized Dark Mind S-L</h3><p>Streetwear premium · Corte oversized</p><div class="price">RD$950</div><a class="btn" href="https://wa.me/18097500058" target="_blank">Comprar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.imgur.com/zYDr54Z.png" alt="Demond Frest Estile"><h3>Demond Frest Estile – negro S-L</h3><p>Edición limitada</p><div class="price">RD$950</div><a class="btn" href="https://wa.me/18097500058" target="_blank">Comprar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.imgur.com/igagcka.jpeg" alt="Rebel Soul"><h3>Rebel Soul</h3><p>Estilo urbano · Unisex S-L</p><div class="price">RD$950</div><a class="btn" href="https://wa.me/18097500058" target="_blank">Comprar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.imgur.com/vkNjcQB.png" alt="Abrigo The Humand Mind"><h3>Abrigo The Humand Mind Hodies S-L</h3><p>Abrigo urbano · Edición limitada</p><div class="price">RD$1,390</div><a class="btn" href="https://wa.me/18097500058" target="_blank">Comprar por WhatsApp</a></div>
+    <div class="product"><img src="https://i.imgur.com/SkYNacp.jpeg" alt="Rebel Mind Hodies"><h3>Rebel
+
+</section>
+
+ <!-- HISTORIA -->
+  <section class="historia" id="historia">
+    <p>
+      Frest Estylo nace de la necesidad de expresar identidad, libertad y autenticidad
+      a través del estilo. Hacemos cada artículo con pasión y amor, venimos de un lugar
+      donde rendirse no es una opción.
+    </p>
+
+    <p>
+      Cada diseño representa frescura, rebeldía y creatividad.
+    </p>
+  </section>
